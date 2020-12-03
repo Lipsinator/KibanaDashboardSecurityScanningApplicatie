@@ -18,7 +18,7 @@ logDestination="${PWD}/SecurityLogs/"
 read -p "Please enter the scp address of the cluster where the logs are generated (including path of the Securityscanlogs folder and all log files that you want to transfer): " scpAddress
 
 # Use SCP to transfer the logs from the Cluster to the local folder
-./Scripts/scpScript.sh $scpAddress $logDestination &&
+scp $scpAddress $logDestination &&
 
 # Start elastic in a seperate terminal window.
 gnome-terminal -- ELK/elasticsearch-7.10.0/bin/elasticsearch
@@ -51,6 +51,16 @@ sleep 30
 logstashPID=` netstat -antp 2>/dev/null | grep 9600 | awk '{print $7, $8}' | cut -f1 -d"/"`
 kill -9 $logstashPID 
 
-
+clear
 echo "All data is succesfully transfered to your local elasticsearch database."
 echo "Visit 'http://localhost:5601' for the kibana dashboard"
+
+# After user input kill the instances of Kibana en Elasticsearch.
+read -p "Press any key to close ElasticSearch and Kibana and exit the application..."
+
+logstashPID=` netstat -antp 2>/dev/null | grep 5601 | awk '{print $7, $8}' | cut -f1 -d"/"`
+kill -9 $logstashPID
+
+#logstashPID=` netstat -antp 2>/dev/null | grep 9300 | awk '{print $7, $8}' | cut -f1 -d"/"`
+#kill -9 $logstashPID
+
