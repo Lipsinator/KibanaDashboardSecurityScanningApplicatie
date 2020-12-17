@@ -8,9 +8,10 @@ Dit deel van de applicatie zet de verkregen log bestanden in een Elasticsearch d
 
 # Installatie
 1) Pull deze repository naar je Linux laptop.
-2) Download:
-- https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.1-linux-x86_64.tar.gz
-- https://artifacts.elastic.co/downloads/logstash/logstash-7.10.1-linux-x86_64.tar.gz
-- https://artifacts.elastic.co/downloads/kibana/kibana-7.10.1-linux-x86_64.tar.gz
+2) Download de laatste versie van Elasticsearch, Logstash and Kibana:
+- https://www.elastic.co/downloads/elasticsearch
+- https://www.elastic.co/downloads/logstash
+- https://www.elastic.co/downloads/kibana
 3) Pak de bestanden uit naar de map van dit repository.
-4) Trap het start.sh script af.
+4) Voer het commando: "chmod +x start.sh" uit.
+5) Trap het start.sh script af.
