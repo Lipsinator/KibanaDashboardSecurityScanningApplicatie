@@ -11,7 +11,6 @@
 #
 
 clear
-mkdir SecurityLogs 2> errorlog.txt
 
 # Start elastic in a seperate terminal window.
 gnome-terminal --title="Elasticsearch" -- elasticsearch-7.10.1/bin/elasticsearch
