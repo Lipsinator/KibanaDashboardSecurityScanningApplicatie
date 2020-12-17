@@ -1,7 +1,8 @@
 # Stageopdracht: Security Scanning Applicatie Kibana Dashboard
 Dit deel van de applicatie zet de verkregen log bestanden in een Elasticsearch database om deze vervolgens inzichtelijk te maken met een Kibana dashboard.
 
-LET OP
+LET OP:
+
 Deze applicatie heeft de logs van https://github.com/TheChrisKip/SecurityScanningApplicatie nodig om te kunnen funcioneren.
 
 # Requirements aan computer
