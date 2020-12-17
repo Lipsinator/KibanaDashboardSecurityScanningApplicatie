@@ -7,11 +7,12 @@ Dit deel van de applicatie zet de verkregen log bestanden in een Elasticsearch d
 - Root access op de pc
 
 # Installatie
-1) Pull deze repository naar je Linux laptop.
-2) Download de laatste versie van Elasticsearch, Logstash and Kibana:
-- https://www.elastic.co/downloads/elasticsearch
-- https://www.elastic.co/downloads/logstash
-- https://www.elastic.co/downloads/kibana
-3) Pak de bestanden uit naar de map van dit repository.
-4) Voer het commando: "chmod +x start.sh" uit.
+1) Clone deze repository naar je Linux laptop.
+2) Download Elasticsearch, Logstash and Kibana:
+- https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.1-linux-x86_64.tar.gz
+- https://artifacts.elastic.co/downloads/logstash/logstash-7.10.1-linux-x86_64.tar.gz
+- https://artifacts.elastic.co/downloads/kibana/kibana-7.10.1-linux-x86_64.tar.gz
+3) Pak de bestanden uit naar de map 'KibanaDashboardSecurityScanningApplicatie'.
+4) In de map 'LogstashConfigurationFiles' verander in beide .conf bestanden het veld 'PATH-TO-DIRECTORY' naar het absolute pad waar de  
+4) Voer het volgende commando uit "chmod +x start.sh".
 5) Trap het start.sh script af.
