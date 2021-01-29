@@ -3,7 +3,7 @@ Dit deel van de applicatie zet de verkregen log bestanden in een Elasticsearch d
 
 LET OP:
 
-Deze applicatie heeft de logs van https://github.com/TheChrisKip/SecurityScanningApplicatie nodig om te kunnen funcioneren.
+Deze applicatie heeft de logs van https://github.com/Lipsinator/SecurityScanningApplicatie nodig om te kunnen funcioneren.
 
 # Requirements aan computer
 - PC moet Linux draaien
